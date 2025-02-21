@@ -53,7 +53,21 @@
             font-size: 2rem;
             background-color: transparent; /* Made the background fully transparent */
         }
-        
+
+        /* Navigation section below header */
+        .nav-bar {
+            margin-top: 100px; /* Space below header */
+            background-color: #333;
+            padding: 1rem;
+        }
+        .nav-bar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
         footer { background: rgba(0, 0, 0, 0.8); color: white; padding: 1rem; margin-top: 20px; }
     </style>
 </head>
@@ -87,12 +101,12 @@
         <h1>BattleReadyReplicas</h1>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Navigation Section Below Header -->
+    <div class="nav-bar">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-    </nav>
+    </div>
 
     <!-- Centered Text Bar (Welcome Message) -->
     <div class="welcome-bar">
