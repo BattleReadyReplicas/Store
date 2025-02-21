@@ -14,8 +14,14 @@
     <title>My Online Store</title>
     
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: black; /* Set all text to black */
+        }
+
         /* Fullscreen background carousel */
         #productCarousel {
             position: absolute;
@@ -25,33 +31,60 @@
             height: 100vh; /* Make the carousel take full viewport height */
             z-index: -1; /* Keep carousel behind content */
         }
-        
+
         /* Header styling */
-        header { background: rgba(0, 0, 0, 0.5); color: white; padding: 1rem; position: absolute; width: 100%; z-index: 1; }
-        
+        header {
+            background: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            padding: 1rem; 
+            position: absolute; 
+            width: 100%; 
+            z-index: 1;
+        }
+
         /* Navigation styling */
-        nav { margin: 1rem; }
-        nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
-        
+        nav {
+            margin: 1rem;
+            z-index: 1;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
         /* Center content */
         .content-overlay {
             position: relative;
             z-index: 1; /* Ensure this content stays above the carousel */
-            color: white;
+            color: black; /* Ensure text is black on content overlay */
             padding: 50px;
             margin-top: 100px; /* Adjust if needed */
         }
-        
+
         /* Styling for product section */
         .container {
             width: 80%;
             margin: auto;
         }
-        .product { display: inline-block; width: 30%; padding: 10px; }
-        .product img { width: 100%; border-radius: 8px; }
-        
+        .product {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
         /* Footer styling */
-        footer { background: rgba(0, 0, 0, 0.8); color: white; padding: 1rem; margin-top: 20px; }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +117,7 @@
         <h1>BattleReadyReplicas</h1>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation below the title -->
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
